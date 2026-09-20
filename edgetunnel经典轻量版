@@ -3,7 +3,7 @@ import { connect as 连接 } from 'cloudflare:sockets';
 
 // ============================ 配置区（改这里就能用） ============================
 // 认证令牌：即连接用的 UUID。生成方式：Windows 下执行 Powershell -Command "[guid]::NewGuid()"
-let 认证令牌 = '2541f8d4-d157-46af-9169-0025bf435fbc';
+let 认证令牌 = '964ef1f4-c787-4a16-8362-9a735ebc31b9';
 // 回退地址：直连失败时改走的地址，留空表示不启用
 let 回退地址 = 'pp.xy.kg';
 // 中转地址：经由中转服务器出站。格式 user:pass@host:port 或 host:port，留空表示不启用
@@ -13,7 +13,65 @@ let 中转地址 = '';
 // 每一项可以是 host:port（如 104.16.0.1:443），也可以是一个在线列表的 URL
 // （如 https://bestcf.pages.dev/vps789/top10.txt，会把里面的地址全拉进来）。
 // URL 和 host:port 可以混着填，留空就只用访问域名本身。
-let 优选地址 = '';
+let 优选地址 = 'pages.dev,
+gur.gov.ua,
+icook.tw,
+ip.sb,
+iplocation.io,
+japan.com,
+malaysia.com,
+manmankan.cc,
+ping.pe,
+qa.visamiddleeast.com,
+086181.xyz,
+f3058171cad.002404.xyz,
+russia.com,
+singapore.com,
+stock.hostmonit.com,
+time.is,
+www.7749tv.com,
+www.888dyy.cc,
+cf.090227.xyz,
+cf.877774.xyz,
+cmcc.090227.xyz,
+www.90dushu.com,
+www.baipiao.eu.org,
+www.c333.net,
+www.csgo.com,
+www.ddwhm.com,
+www.gco.gov.qa,
+www.iakeys.com,
+www.okcupid.com,
+www.shopify.com,
+www.udacity.com,
+www.visa.co.jp,
+www.visa.com.sg,
+www.visa.com.tw,
+www.visakorea.com,
+www.whoer.net,
+www.wto.org,
+www.xinpian8.com,
+www.zsu.gov.ua,
+xn--b6gac.eu.org,
+wto.hhhhh.eu.org,
+wto.1.hhhhh.eu.org,
+openai.hhhhh.eu.org,
+sy.1.hhhhh.eu.org,
+xs.wxtv.cc,
+skk.moe,
+mfa.gov.ua,
+saas.sin.fan,
+store.ubi.com,
+cdns.doon.eu.org,
+sub.danfeng.eu.org,
+cf.zhetengsha.eu.org,
+Cm.Soso.Edu.Kg,
+Sub.Cmliussss.Net,
+Owo.O00o.Ooo,
+ProxyIP.US.CMLiussss.Net,
+ProxyIP.SG.CMLiussss.Net,
+ProxyIP.JP.CMLiussss.Net,
+bestcf.pages.dev/vps789/top10.txt';
 // ============================================================================
 
 const 文本解码器 = new TextDecoder();
